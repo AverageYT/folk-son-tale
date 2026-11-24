@@ -343,7 +343,7 @@ elif creator_name in [
     print("\n\n")
     undertail("wonderful.")
 
-elif creatore_name in [
+elif creator_name in [
     "kris", "susie", "noelle", "berdly",
     "catti", "jockington", "rudy",
     "asriel", "toriel", "asgore",

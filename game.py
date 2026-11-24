@@ -351,7 +351,7 @@ elif creator_name in [
     "catty", "sans", "gerson",
     "qc", "papyrus"
 ]:
-    undertail_2(f"{name}. How interesting.")
+    undertail_2(f"{creator_name}. How interesting.")
 
 else:
     undertail_2(f'"{creator_name}."')

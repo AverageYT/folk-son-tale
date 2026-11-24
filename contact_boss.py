@@ -87,7 +87,7 @@ class ContactFight:
 
     @property
     def phase_name(self):
-        return ["INITIAL HANDSHAKE", "PACKET LOSS", "SIGNAL FAILURE", "NO CONNECTION"][self.phase]
+        return ["initial.HANDSHAKE", "PACKET LOSS", "404.NOT.found", "turn on mobile data to access the internet"][self.phase]
 
     def action_done(self, description):
         if self.boss_hp <= 0:
@@ -174,7 +174,7 @@ class ContactFight:
         self.message = "* DODGE! Use arrow keys or WASD."
 
     def dodge_duration(self):
-        return [5.8, 6.7, 7.4, 8.3][self.phase]
+        return [8.3, 11.7, 17.4, 22.1][self.phase]
 
     def spawn(self, kind):
         p = self.phase
@@ -244,7 +244,7 @@ class ContactFight:
             if -2 <= x <= ARENA_W + 1 and -2 <= y <= ARENA_H + 1:
                 living.append(bullet)
                 if now >= self.invulnerable_until and abs(x - self.soul_x) < 0.65 and abs(y - self.soul_y) < 0.65:
-                    damage = [7, 9, 11, 13][self.phase]
+                    damage = [23, 36, 43, 59][self.phase]
                     if self.def_turns:
                         damage = (damage + 1) // 2
                     self.hp = max(0, self.hp - damage)
